@@ -2,7 +2,6 @@
     // Base Settings
     "breadcrumbs.enabled": true,
     "editor.acceptSuggestionOnEnter": "off",
-    "editor.cursorStyle": "underline",
     "editor.dragAndDrop": false,
     "editor.emptySelectionClipboard": false,
     "editor.minimap.enabled": false,
@@ -13,7 +12,6 @@
     "search.showLineNumbers": true,
     "terminal.integrated.cursorBlinking": true,
     "window.newWindowDimensions": "maximized",
-    "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.tabCloseButton": "left",
     "workbench.iconTheme": "vscode-icons",
@@ -21,6 +19,8 @@
     "workbench.statusBar.feedback.visible": false,
     "workbench.sideBar.location": "right",
     "workbench.tree.indent": 15,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
 
     // Base Plugin Settings
     "css.lint.duplicateProperties": "warning",
@@ -37,15 +37,22 @@
     "scss.lint.duplicateProperties": "warning",
     "scss.lint.unknownVendorSpecificProperties": "warning",
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.validate.enable": false,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
     "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
 
-    // Download Plugin Settings
-    "beautify.config": {
+    // Langulage Settings
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-    }
+    // Download Plugin Settings
+    "eslint.packageManager": "yarn",
 }
