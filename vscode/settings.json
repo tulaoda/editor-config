@@ -43,8 +43,9 @@
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
     "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "workbench.settings.enableNaturalLanguageSearch": false,
 
     // Download Plugin Settings
-    "vetur.format.options.useTabs": true,
+    "beautify.config": {
+
+    }
 }
