@@ -46,11 +46,15 @@
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
     "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "path-intellisense.autoSlashAfterDirectory": true,
 
     // Langulage Settings
     "[javascript]": {
         "editor.tabSize": 2,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.tabSize": 2,
     },
 
     // Download Plugin Settings

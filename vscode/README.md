@@ -3,6 +3,7 @@
 ### 通用
 1. 中文包：不多说
 2. [ESLint](https://eslint.org/): 不多说
+3. open in browser: 不多说
 3. [Beautiful](https://github.com/HookyQR/VSCodeBeautify/blob/master/Settings.md): 格式化代码的扩展，可以自己自定义格式化，但是自己尝试的时候发现没有默认的 Format 好用 = =
 4. Prettier - Code formatter: 格式化代码的预设，比 Beautiful 好用得多
 4. Code Runner: 测试你的代码块，并输出到 vscode 中
@@ -12,6 +13,7 @@
 8. Auto Close Tag: 自动补全尾标签
 9. Path Intellisense: 路径自动补全，其实大部分 vscode 在内部已经实现了，但是当需要拓展原有的路径目录时相当好用！
 10. bracket-padder: 括号中自动匹配空格，写代码很舒服
+11. Color Info: 直接在编辑器中查看颜色信息
 
 ### Git
 1. Git History: 查看 Git 提交的记录，文件的 Git 提交记录等
