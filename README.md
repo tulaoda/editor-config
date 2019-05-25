@@ -1,3 +1,9 @@
-# 各个 IDE 的配置文件
+#  IDEs 配置仓库
 
-1. [vscode](./vscode/README.md)
+## 前端
+
+1. [x] [VS Code](./vscode/README.md)
+2. [ ] WebStorm
+5. [ ] Atom
+4. [ ] Vim
+5. [ ] Sublime
