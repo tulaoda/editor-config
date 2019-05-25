@@ -20,7 +20,13 @@
 
 ## 2. 自定义快捷键
 
-有时候觉得 vscode 的 [原始快捷键](./keyboard-shortcuts-mac.pdf) 还是很蛋疼的，所以我针对自己的使用情况做了些更改
+有时候觉得 vscode 的 [原始快捷键](./keyboard-shortcuts-mac.pdf) 还是很蛋疼的，所以我针对自己的使用情况做了些更改。
+
+将默认的 **keybindings.json** 中的内容替换为项目中对应文件的内容即可。MacOS 中按组合键 “command k + command s” 即可查看全部的快捷键，点击标题栏右边的 “{}” 图标即可打开 json 形式的文件。
+
+| 快捷键 | 功能描述 | 初始快捷键 | 初始功能 |
+| :---: | :-----: | :------: | :--:|
+| 回车键 | 打开文件 | 无 | 更改文件名 |
 
 <br/>
 
@@ -41,7 +47,7 @@
 8. Bracket Pair Colorize: 括号颜色区分和匹配
 9. Auto Rename Tag: 修改标签，自动修改对应的另一个标签
 10. Auto Close Tag: 自动补全尾标签
-11. Path Intellisense: 路径自动补全，其实大部分 vscode 在内部已经实现了，但是当需要拓展原有的路径目录时相当好用！
+11. Path Intellisense: 路径自动补全，vscode 内部已经实现了基本功能，但要在项目中拓展路径映射时十分好用
 12. bracket-padder: 括号中自动匹配空格，写代码很舒服
 13. Color Info: 直接在编辑器中查看颜色信息
 
