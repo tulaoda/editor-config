@@ -50,6 +50,7 @@
 11. Path Intellisense: 路径自动补全，vscode 内部已经实现了基本功能，但要在项目中拓展路径映射时十分好用
 12. bracket-padder: 括号中自动匹配空格，写代码很舒服
 13. Color Info: 直接在编辑器中查看颜色信息
+14. Document This: 快速生成标准注释
 
 ### Git
 1. Git History: 查看 Git 提交的记录，文件的 Git 提交记录等
