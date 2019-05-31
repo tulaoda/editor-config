@@ -5,6 +5,7 @@
 **settings.json** 文件，使用该文件中的内容替换默认的 setting.json 中的内容即可。在 MacOS 下按 “command + ,” 键打开配置页，默认为 ui 形式，点击标题栏右边的 “{}” 图标即可打开 json 形式的文件。
 
 其中
+
 - `// Base Settings` 注释下面的部分是 vscode 默认的配置项
 - `// Base Plugin Settings` 下面的部分是初始安装的插件的配置
 - `// Langulage Settings` 下是针对不同编程语言的配置
@@ -24,9 +25,9 @@
 
 将默认的 **keybindings.json** 中的内容替换为项目中对应文件的内容即可。MacOS 中按组合键 “command k + command s” 即可查看全部的快捷键，点击标题栏右边的 “{}” 图标即可打开 json 形式的文件。
 
-| 快捷键 | 功能描述 | 初始快捷键 | 初始功能 |
-| :---: | :-----: | :------: | :--:|
-| 回车键 | 打开文件 | 无 | 更改文件名 |
+| 快捷键 | 功能描述 | 初始快捷键 |  初始功能  |
+| :----: | :------: | :--------: | :--------: |
+| 回车键 | 打开文件 |     无     | 更改文件名 |
 
 <br/>
 
@@ -37,6 +38,7 @@
 ## 3. 插件列表
 
 ### 通用
+
 1. 中文包：不多说
 2. [ESLint](https://eslint.org/): 不多说
 3. open in browser: 不多说
@@ -51,17 +53,22 @@
 12. bracket-padder: 括号中自动匹配空格，写代码很舒服
 13. Color Info: 直接在编辑器中查看颜色信息
 14. Document This: 快速生成标准注释
+15. markdownlint: markdown 的语法检测工具
 
 ### Git
+
 1. Git History: 查看 Git 提交的记录，文件的 Git 提交记录等
 2. Git Graph: 一个更全面的 Git 图形化界面
 
 ### ES6 +
+
 1. JavaScript(ES6) code snippets: ES6 新特性的补全
 
 ### HTML
+
 1. HTML Snippets: 目前还不知道有什么用
 
-### Vue 开发专用
+### Vue
+
 1. [Vetur](https://vuejs.github.io/vetur/): 提供 Vue 的语法高亮、输入提示、Lint、Emmet 等功能
 2. Vue VSCode Snippets: Vue 的补全
