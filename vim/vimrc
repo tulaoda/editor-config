@@ -1,10 +1,11 @@
-syntax enable
+syntax on 
 
-set number
 set nocompatible
-set textwidth=80
-set wrap
+set number 
+set nowrap
 set ruler
+set scrolloff=3
+set hlsearch
 
 " set the runtime path to include Vundle and initialize
 filetype off
