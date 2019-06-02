@@ -1,5 +1,6 @@
 syntax on 
 
+set backspace=2
 set nocompatible
 set number 
 set nowrap
@@ -7,12 +8,12 @@ set ruler
 set scrolloff=3
 set hlsearch
 
+
 " set the runtime path to include Vundle and initialize
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
@@ -24,17 +25,23 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " :PluginSearch foo - 搜索 foo ; 追加 `!` 清除本地缓存
 " :PluginClean      - 清除未使用插件,需要确认; 追加 `!` 自动批准移除未使用插件
 
+Plugin 'scrooloose/nerdTree'
+Plugin 'vim-airline/vim-airline'
+
 call vundle#end()
 filetype plugin indent on
 
 
 " NerdTree Config
+" You can refer to this github:
+" https://github.com/scrooloose/nerdtree
+
 " 使用vim时自动开启NerdTree
 " autocmd vimenter * NERDTree 
 " 使用快捷键开启NerdTree
-" map <F3> :NERDTreeToggle<CR>
+map <F3> :NERDTreeToggle<CR>
 " 当仅剩下NerdTree窗口时自动关闭Vim
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " 修改默认展开（折叠）标记
 " let g:NERDTreeDirArrowExpandable = '+'
 " let g:NERDTreeDirArrowCollapsible = '-'
@@ -52,25 +59,22 @@ filetype plugin indent on
 " Unknown   : ?
 
 " NERDTress File highlighting
-" function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-" exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-" exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-" endfunction
-
-" call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
 " call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
-" call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+" call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
 " call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
 " call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
 " call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-" call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-" call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
 " call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
-" call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
 " call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
-" call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
-" call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
-" call NERDTreeHighlightFile('vue', 'green', 'none', '#ff00ff', '#151515')
 
 
 " Git Gutter Config
@@ -80,16 +84,13 @@ filetype plugin indent on
 " let g:gitgutter_sign_removed_first_line = '^^'
 " let g:gitgutter_sign_modified_removed = 'ww'
 
-
 " Syntastic Config
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-
-" let g:syntastic_always_populate_loc_list = 1
 " let g:syntastic_auto_loc_list = 0
 " let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
+
 
 " emmet Config
 " let g:user_emmet_leader_key='e'
