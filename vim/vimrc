@@ -1,12 +1,13 @@
 syntax on 
-
 set backspace=2
 set nocompatible
 set number 
 set nowrap
-set ruler
 set scrolloff=3
-set hlsearch
+" set ruler
+" set hlsearch
+
+
 
 
 " set the runtime path to include Vundle and initialize
@@ -27,9 +28,12 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'scrooloose/nerdTree'
 Plugin 'vim-airline/vim-airline'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
+
+
 
 
 " NerdTree Config
@@ -77,6 +81,17 @@ call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
 " call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 
 
+
+
+" Airline Config
+"
+" set tab line on
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+
+
+
+
 " Git Gutter Config
 " let g:gitgutter_sign_added = '++'
 " let g:gitgutter_sign_modified = 'MM'
@@ -92,5 +107,4 @@ call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
 " let g:syntastic_check_on_wq = 0
 
 
-" emmet Config
-" let g:user_emmet_leader_key='e'
+
