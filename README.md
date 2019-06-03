@@ -1,9 +1,9 @@
-#  IDEs 配置仓库
+# IDEs 配置仓库
 
 ## 前端
 
-1. [x] [VS Code](./vscode/README.md)
-2. [ ] WebStorm
-5. [ ] Atom
-4. [ ] Vim
+1. [x] Vim
+2. [x] [VS Code](./vscode/README.md)
+3. [ ] WebStorm
+4. [ ] Atom
 5. [ ] Sublime
